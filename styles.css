@@ -41,14 +41,14 @@ body {
     left: 245px;
     position: absolute;
     bottom: 100px;
-    background-color: red;
+    background-color: black;
 }
 
 #sensor2 {
     left: 245px;
     position: absolute;
     bottom: 195px;
-    background-color: yellow;
+    background-color: black;
 }
 
 #sensor3 {
@@ -56,5 +56,5 @@ body {
     left: 245px;
     position: absolute;
     bottom: 350px;
-    background-color: green;
+    background-color: black;
 }

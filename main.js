@@ -55,6 +55,7 @@ function estado_tanque ( s1, s2, s3 )
 
     switch ( est ) {
         case 0:
+            $(".agua")
             return "vacio";
         case 1:
             return "casi-vacio";
