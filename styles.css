@@ -3,6 +3,7 @@ body {
 }
 
 .cylinder {
+
     opacity: 0.2;
     --parameter: 40px;
     width: 250px;
@@ -21,16 +22,18 @@ body {
     --parameter: 30px;
     width: 250px;
     height: 80px;
-    background: radial-gradient(50% var(--parameter) at 50% var(--parameter), aqua 99.99% 0), radial-gradient(50% var(--parameter) at 50% calc(100% - var(--parameter)), aqua 99.99%, #000 0) aqua;
+    background: radial-gradient(50% var(--parameter) at 50% var(--parameter), rgba(0,160,160,0.4) 99.99% 0), radial-gradient(50% var(--parameter) at 50% calc(100% - var(--parameter)), rgba(0,160,160,0.4) 99.99%, aqua 0) aqua;
     border-radius: 100% / calc(var(--parameter) * 2);
     position: absolute;
     bottom: 10px;
+	background-color: rgba(0, 160, 160, 0.4);
+	content: '';
 }
 
 .sensor {
+    
     height: 25px;
     width: 25px;
-    background-color: red;
     border-radius: 50%;
 }
 
@@ -38,19 +41,20 @@ body {
     left: 245px;
     position: absolute;
     bottom: 100px;
-    background-color: #000;
+    background-color: red;
 }
 
 #sensor2 {
     left: 245px;
     position: absolute;
-    bottom: 195;
-    background-color: #000;
+    bottom: 195px;
+    background-color: yellow;
 }
 
 #sensor3 {
+
     left: 245px;
     position: absolute;
     bottom: 350px;
-    background-color: #000;
+    background-color: green;
 }
