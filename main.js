@@ -87,19 +87,25 @@ function actualizar ( water_change )
 
     let lampara = $(".lampara")
 
+    alert (est);
+    const lamp_text = document.querySelector(".lampara");
     switch ( est ) {
         case 0:
             lampara.css({background: "black"})
-            return "vacio";
+            lamp_text.innerHTML = "vacio";
+            break;
         case 1:
             lampara.css({background: "red"})
-            return "casi-vacio";
+            lamp_text.innerHTML = "minimo";
+            break;
         case 2:
             lampara.css({background: "#FFBF00"})
-            return "medio-lleno";
+            lamp_text.innerHTML = "medio-lleno";
+            break;
         case 3:
             lampara.css({background: "green"})
-            return "lleno";
+            lamp_text.innerHTML = "lleno";
+            break;
         default:
             return "caso invalido";
     }
