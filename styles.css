@@ -78,9 +78,7 @@ body {
     background: gray;
 }
 
-#estado {
-    height: 100%;
-    width: 100%;
+.lampara p {
     justify-content: center;
-    text-align: center;
+    text-align: center;  
 }
