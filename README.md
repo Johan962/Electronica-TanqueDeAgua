@@ -7,5 +7,5 @@ suma de productos, el estado del tanque (lleno, medio-lleno, minimo y vacio).
 
 ### Integrantes
 - Alegria Sallo Daniel Rodrigo (215270)
-- Conde Sallo Johan Mihail     (218753)
+- Conde Sallo Johan Mihail     (215783)
 
