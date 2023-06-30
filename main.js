@@ -34,19 +34,19 @@ function cambiar_estados_sensores( e1, e2, e3 )
     s3.css( {"--on": e3 } );
 
     if (e1==1){
-        s1.css({background : "green"})
+        s1.css({background : "yellow"})
     }
     else{
         s1.css({background : "black"})
     }
     if (e2==1){
-        s2.css({background : "green"})
+        s2.css({background : "yellow"})
     }
     else {
         s2.css({background : "black"})
     }
     if (e3==1){
-        s3.css({background : "green"})
+        s3.css({background : "yellow"})
     }
     else {
         s3.css({background : "black"})

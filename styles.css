@@ -1,7 +1,9 @@
+
 body {
     display: flex;
     justify-content: baseline;
     flex-wrap: wrap;
+    background-color: aliceblue;
 }
 
 .cylinder {
