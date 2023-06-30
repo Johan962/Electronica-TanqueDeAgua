@@ -74,38 +74,30 @@ function actualizar ( water_change )
     } else {
         cambiar_estados_sensores(1,1,1);
     }
+
+
     let e1, e2, e3;
     e1 = Number(s1.css("--on"));
     e2 = Number(s2.css("--on"));
     e3 = Number(s3.css("--on"));
 
+    if ( caso_valido(e1,e2,e3) ) {
+        let lampara = $(".lampara")
+        document.getElementById('text-lamp')[0];
 
-    let est = -1;
-
-    if ( caso_valido(e1,e2,e3) )
-        est = e1 + e2 + e3;
-
-    let lampara = $(".lampara")
-    document.getElementById('text-lamp')[0];
-    switch ( est ) {
-        case 0:
-            lampara.css({background: "gray"})
-            document.getElementById('text-lamp').innerText = "Vacio";
-            break;
-        case 1:
-            lampara.css({background: "red"})
-            document.getElementById('text-lamp').innerText = "Minimo";
-            break;
-        case 2:
-            lampara.css({background: "#FFBF00"})
-            document.getElementById('text-lamp').innerText = "Medio-lleno";
-            break;
-        case 3:
+        if ( e3 == 1 ) {
             lampara.css({background: "green"})
             document.getElementById('text-lamp').innerText = "Lleno";
-            break;
-        default:
-            return "caso invalido";
+        } else if ( e2 == 1) {
+            lampara.css({background: "#FFBF00"})
+            document.getElementById('text-lamp').innerText = "Medio-lleno";
+        } else if ( e1 == 1) {
+            lampara.css({background: "red"})
+            document.getElementById('text-lamp').innerText = "Minimo";
+        } else {
+            lampara.css({background: "gray"})
+            document.getElementById('text-lamp').innerText = "Vacio";
+        }
     }
 
 }
